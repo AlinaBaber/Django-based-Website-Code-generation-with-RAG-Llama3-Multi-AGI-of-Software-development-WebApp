@@ -1,0 +1,13 @@
+{% extends 'DevBotApp/base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Upload Your Logo</h1>
+        <p>Please upload your logo to generate a color theme palette for your website.</p>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Upload Logo</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+<!-- userrequirements/templates/userrequirements/question.html -->
+
+{% extends 'DevBotApp/base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center">Question {{ question_id }}</h1>
+        <form method="post" class="mt-4">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Next</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

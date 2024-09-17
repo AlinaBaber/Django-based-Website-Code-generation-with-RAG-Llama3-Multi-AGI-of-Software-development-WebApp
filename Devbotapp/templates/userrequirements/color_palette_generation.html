@@ -1,0 +1,74 @@
+{% extends 'Devbotapp/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Color Theme</h1>
+    <form method="post" action="{% url 'Devbotapp:save_color_palette' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="color_choice">Choose a Color Palette</label>
+            <select id="color_choice" name="color_choice" class="form-control">
+                <option value="generated">Generated Color Palette</option>
+                <option value="custom">Customize Your Color Palette</option>
+            </select>
+        </div>
+        <div class="form-group generated-palette">
+            <label>Generated Color Palette</label>
+            <div class="palette">
+                {% for color in palette %}
+                    <div class="color-box" style="background-color: rgb({{ color.0 }}, {{ color.1 }}, {{ color.2 }});"></div>
+                    <input type="hidden" name="generated_palette" value="rgb({{ color.0 }}, {{ color.1 }}, {{ color.2 }})">
+                {% endfor %}
+            </div>
+        </div>
+        <div class="form-group custom-palette" style="display: none;">
+            <label>Customize Your Color Palette</label>
+            <div id="custom-palette">
+                <input type="color" name="custom_palette" value="#000000">
+                <input type="color" name="custom_palette" value="#ffffff">
+                <input type="color" name="custom_palette" value="#ff0000">
+                <input type="color" name="custom_palette" value="#00ff00">
+                <input type="color" name="custom_palette" value="#0000ff">
+                <input type="color" name="custom_palette" value="#ffff00">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Color Palette</button>
+    </form>
+</div>
+
+<style>
+    .palette {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .color-box {
+        width: 50px;
+        height: 50px;
+    }
+    #custom-palette input[type="color"] {
+        width: 50px;
+        height: 50px;
+        border: none;
+        margin-right: 10px;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const colorChoice = document.getElementById('color_choice');
+        const generatedPalette = document.querySelector('.generated-palette');
+        const customPalette = document.querySelector('.custom-palette');
+
+        colorChoice.addEventListener('change', function() {
+            if (colorChoice.value === 'generated') {
+                generatedPalette.style.display = 'block';
+                customPalette.style.display = 'none';
+            } else {
+                generatedPalette.style.display = 'block';
+                customPalette.style.display = 'block';
+            }
+        });
+    });
+</script>
+{% endblock %}

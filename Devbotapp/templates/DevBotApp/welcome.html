@@ -1,0 +1,13 @@
+{% extends 'DevBotApp/base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Hey We are DevBots</h1>
+        <p>We are here to help you in creating your desired website. Please Sign up if you are new user or login if you already have account.</p>
+
+        <div class="mt-4">
+            <a href="{% url 'account_login' %}" class="btn btn-primary">Login</a>
+            <a href="{% url 'Devbotapp:signup' %}" class="btn btn-secondary">Sign Up</a>
+        </div>
+    </div>
+{% endblock %}

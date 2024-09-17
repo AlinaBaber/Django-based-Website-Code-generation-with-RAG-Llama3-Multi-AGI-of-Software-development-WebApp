@@ -1,0 +1,14 @@
+{% extends 'DevBotApp/base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Welcome, {{ user.username }}</h1>
+        <p>We can help you in building various types of projects. Please start by creating a new project or selecting an existing one.</p>
+        <div class="mt-4">
+            <a href="{% url 'Devbotapp:create_project' %}" class="btn btn-primary">Create New Project</a>
+            {% if client.client_type == 'Business' %}
+                <a href="{% url 'Devbotapp:build_by_chat' %}" class="btn btn-secondary">Build by Chat</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

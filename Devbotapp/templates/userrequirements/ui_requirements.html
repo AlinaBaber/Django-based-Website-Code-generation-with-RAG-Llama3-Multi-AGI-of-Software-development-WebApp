@@ -1,0 +1,28 @@
+{% extends 'Devbotapp/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Font Choice</h1>
+    <form method="post">
+        {% csrf_token %}
+            <div class="form-group">
+                <label for="id_font">Choose a font</label>
+                <div>
+                    {% for value, label in form.font.field.choices %}
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{ form.font.name }}" id="id_font_{{ forloop.counter }}" value="{{ value }}" {% if form.font.value == value %}checked{% endif %}>
+                            <label class="form-check-label" for="id_font_{{ forloop.counter }}" style="font-family: '{{ value }}'; font-size: 16px;">
+                                {{ label }}
+                            </label>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        <div class="form-group">
+            <label for="id_font_color">Choose a Font Color</label>
+            {{ form.font_color }}
+        </div>
+        <button type="submit" class="btn btn-primary">Save Requirements</button>
+    </form>
+</div>
+{% endblock %}

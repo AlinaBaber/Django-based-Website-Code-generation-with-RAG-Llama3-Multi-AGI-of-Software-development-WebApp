@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    background-color: #68217A;
+}
+
+.navbar .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #9B4F96;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #68217A;
+}
+
+.btn-primary {
+    background-color: #68217A;
+    border-color: #68217A;
+}
+
+.btn-primary:hover {
+    background-color: #512BD4;
+    border-color: #512BD4;
+}
+
+.btn-secondary {
+    background-color: #9B4F96;
+    border-color: #9B4F96;
+}
+
+.btn-secondary:hover {
+    background-color: #68217A;
+    border-color: #68217A;
+}
+
+.form-control:focus {
+    border-color: #68217A;
+    box-shadow: 0 0 0 0.2rem rgba(104, 33, 122, 0.25);
+}
+
+footer {
+    background-color: #68217A;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9B4F96;
+    text-decoration: underline;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    margin-top: 5px;
+}

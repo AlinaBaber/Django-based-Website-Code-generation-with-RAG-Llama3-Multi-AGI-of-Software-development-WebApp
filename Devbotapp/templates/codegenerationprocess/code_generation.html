@@ -1,0 +1,78 @@
+{% extends 'Devbotapp/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Code Generation Process</h1>
+    <div id="log-messages" class="log-messages mt-3">
+        <ul></ul>
+    </div>
+    <div class="text-center mt-4">
+        <a id="display-site-button" href="{% url 'Devbotapp:display_generated_site' project.id %}" class="btn btn-secondary" disabled>Display Site</a>
+        <a id="download-site-button" href="{% url 'Devbotapp:download_project_zip' project.id %}" class="btn btn-success" disabled>Download Site</a>
+        <a id="download-documents-button" href="{% url 'Devbotapp:download_project_documents' project.id %}" class="btn btn-info" disabled>Download Documents</a>
+    </div>
+</div>
+
+<style>
+    .log-messages {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        padding: 15px;
+        border-radius: 5px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    .log-messages ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .log-messages li {
+        padding: 5px 0;
+        border-bottom: 1px solid #dee2e6;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const projectId = "{{ project.id }}";
+        const logMessages = document.getElementById('log-messages').getElementsByTagName('ul')[0];
+
+        const socket = new WebSocket('ws://' + window.location.host + '/ws/code-generation/' + projectId + '/');
+
+        socket.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            const newMessage = document.createElement('li');
+            newMessage.textContent = data.message;
+            logMessages.appendChild(newMessage);
+            logMessages.scrollTop = logMessages.scrollHeight;  // Auto scroll to the bottom
+            if (data.message.includes('All processes completed successfully.')) {
+                document.getElementById('display-site-button').disabled = false;
+                document.getElementById('download-site-button').disabled = false;
+                document.getElementById('download-documents-button').disabled = false;
+            }
+        };
+
+        socket.onclose = function(event) {
+            const newMessage = document.createElement('li');
+            newMessage.textContent = 'Connection closed.';
+            logMessages.appendChild(newMessage);
+        };
+
+        fetch(`/project/${projectId}/start_code_generation/`, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}',
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                console.log('Process started successfully.');
+            } else {
+                console.log('Failed to start the process.');
+            }
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'DevBotApp/base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Logout Successful</h1>
+        <p>You have been logged out. Thank you for using the Survey Application.</p>
+        <div class="mt-4">
+            <a href="{% url 'Devbotapp:welcome' %}" class="btn btn-primary">Go to Welcome Page</a>
+            <a href="{% url 'account_login' %}" class="btn btn-secondary">Login Again</a>
+        </div>
+    </div>
+{% endblock %}

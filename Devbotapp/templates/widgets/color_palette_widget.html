@@ -1,0 +1,6 @@
+{% for value, label in widget.choices %}
+    <label>
+        <input type="radio" name="{{ widget.name }}" value="{{ value }}" {% if widget.value == value %}checked{% endif %}>
+        <span style="background-color: {{ value }}; display: inline-block; width: 20px; height: 20px; border: 1px solid #000;"></span> {{ label }}
+    </label>
+{% endfor %}

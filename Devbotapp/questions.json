@@ -1,0 +1,394 @@
+{
+  "questions": [
+    {
+      "project": "General",
+      "questions": [
+        {
+          "question": "What is the primary purpose of the website?",
+          "options": ["E-commerce", "Blog/News", "Portfolio", "Corporate/Business", "Educational", "Non-Profit", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Who is your target audience?",
+          "options": ["General Public", "Customers/Clients", "Students", "Professionals", "Specific Demographic (Please specify)", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Which features do you need on your website?",
+          "options": ["Contact Form", "User Registration/Login", "Blog/News Section", "E-commerce (Shopping Cart, Product Listings)", "Image Gallery/Slider", "Search Functionality", "Social Media Integration", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        },
+        {
+          "question": "Do you need any specific integrations?",
+          "options": ["Payment Gateway (e.g., PayPal, Stripe)", "CRM (e.g., Salesforce, HubSpot)", "Email Marketing (e.g., Mailchimp)", "Analytics (e.g., Google Analytics)", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        },
+        {
+          "question": "How do you plan to manage content on your website?",
+          "options": ["Custom CMS", "WordPress", "Joomla", "Drupal", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Who will be responsible for updating the content?",
+          "options": ["Myself", "A team member", "A hired professional", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        }
+      ]
+    },
+    {
+      "project": "UI Requirements",
+      "questions": [
+        {
+          "question": "Do you have any design preferences or themes in mind?",
+          "options": ["Modern and Minimalistic", "Classic and Elegant", "Fun and Vibrant", "Professional and Corporate", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you have any color preferences?",
+          "options": ["Yes (Please specify)", "No", "Open to suggestions"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What type of layout do you prefer?",
+          "options": ["Single Page", "Multi-Page", "Grid Layout", "List Layout", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you have any existing branding materials?",
+          "options": ["Logo", "Color Scheme", "Fonts", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        },
+        {
+          "question": "Do you have any reference websites you like?",
+          "options": ["Yes (Please specify)", "No"],
+          "QUESTION_TYPE": "combo"
+        }
+      ]
+    },
+    {
+      "project": "Advanced Project Requirements",
+      "questions": [
+        {
+          "question": "Do you have any specific technical requirements?",
+          "options": ["Responsive Design (Mobile-Friendly)", "SEO Optimization", "Fast Loading Speed", "High Security", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        },
+        {
+          "question": "What is your budget for this project?",
+          "options": ["$500 - $1000", "$1000 - $5000", "$5000 - $10,000", "$10,000+", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What is your desired timeline for the project?",
+          "options": ["Less than 1 month", "1-3 months", "3-6 months", "More than 6 months", "Flexible"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you need ongoing support and maintenance?",
+          "options": ["Yes", "No", "Not sure"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "How would you like to communicate during the project?",
+          "options": ["Email", "Phone", "Video Calls", "Messaging Apps (e.g., Slack)", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "How often would you like to receive updates on the project?",
+          "options": ["Daily", "Weekly", "Bi-weekly", "Monthly", "As needed"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Which platform or technology would you prefer for your website?",
+          "options": ["WordPress", "Joomla", "Drupal", "Django (Python)", "Ruby on Rails", "Laravel (PHP)", "ASP.NET", "Static Site Generators (e.g., Jekyll, Hugo)", "Custom Development (Specify preferred languages/frameworks)", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you have a preference for the database management system?",
+          "options": ["MySQL", "PostgreSQL", "SQLite", "MongoDB", "Microsoft SQL Server", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you require a specific hosting provider?",
+          "options": ["Bluehost", "SiteGround", "AWS (Amazon Web Services)", "Google Cloud Platform", "Microsoft Azure", "DigitalOcean", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Would you like your website to be hosted on a specific type of server?",
+          "options": ["Shared Hosting", "VPS (Virtual Private Server)", "Dedicated Server", "Cloud Hosting", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you need support for version control systems?",
+          "options": ["Yes (Git, SVN, etc.)", "No", "Not sure"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you have a preferred development methodology?",
+          "options": ["Agile", "Waterfall", "Scrum", "Kanban", "Other (Please specify)", "No preference"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Do you have any specific deployment requirements?",
+          "options": ["Continuous Integration/Continuous Deployment (CI/CD)", "Manual Deployment", "Automated Deployment", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Would you require any specific development tools or environments?",
+          "options": ["Integrated Development Environment (IDE) preference (e.g., VS Code, PyCharm)", "Specific libraries or frameworks", "Containerization (e.g., Docker)", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        },
+        {
+          "question": "Do you have any specific requirements for API integrations?",
+          "options": ["RESTful APIs", "GraphQL", "SOAP", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Are there any other technical or non-technical requirements you would like to specify?",
+          "options": ["Yes (Please specify)", "No"],
+          "QUESTION_TYPE": "combo"
+        }
+      ]
+    },
+    {
+      "project": "Personal Blog",
+      "questions": [
+        {
+          "question": "Who is your target audience?",
+          "options": ["General Public", "Friends and Family", "Hobbyists/Enthusiasts", "Professional Peers", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What features are important to you?",
+          "options": ["Post Creation and Management", "Comment System", "Social Media Integration", "Categories and Tags", "SEO Tools", "Newsletter Subscription", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Online Store",
+      "questions": [
+        {
+          "question": "Who are you primarily selling to?",
+          "options": ["General Consumers", "Specific Age Group (Please specify)", "Niche Market (Please specify)", "Business to Business (B2B)", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "Which functionalities are essential?",
+          "options": ["Product Catalog", "Shopping Cart", "Payment Gateway Integration", "User Accounts", "Order Tracking", "Inventory Management", "Customer Reviews", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Business Website",
+      "questions": [
+        {
+          "question": "Who is your target audience?",
+          "options": ["Potential Clients", "Existing Customers", "Business Partners", "Investors", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What pages do you need?",
+          "options": ["Home", "About Us", "Services", "Products", "Contact Us", "Blog/News", "Testimonials", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Portfolio Website",
+      "questions": [
+        {
+          "question": "Who do you want to reach with your portfolio?",
+          "options": ["Potential Employers", "Clients/Customers", "Colleagues/Peers", "General Public", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What sections are necessary?",
+          "options": ["Projects Showcase", "About Me", "Resume/CV", "Contact Form", "Client Testimonials", "Blog", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Educational Website",
+      "questions": [
+        {
+          "question": "Who is the primary audience?",
+          "options": ["Students", "Teachers/Educators", "Parents", "Researchers", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What features are required?",
+          "options": ["Course Listings", "Student Registration", "Learning Management System (LMS)", "Quizzes and Exams", "Certification", "Discussion Forums", "Instructor Profiles", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Non-Profit Organization Website",
+      "questions": [
+        {
+          "question": "Who are you aiming to engage?",
+          "options": ["Donors", "Volunteers", "Beneficiaries", "General Public", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What functionalities are essential?",
+          "options": ["Donation System", "Volunteer Registration", "Event Management", "Blog/News", "About Us", "Contact Information", "Success Stories", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "News Website",
+      "questions": [
+        {
+          "question": "Who is your target audience?",
+          "options": ["General Public", "Specific Interest Group (Please specify)", "Local Community", "Global Audience", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What features are important?",
+          "options": ["Article Management", "Categories and Tags", "Comment System", "Social Media Integration", "Newsletter Subscription", "Advertisement Management", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Social Networking Site",
+      "questions": [
+        {
+          "question": "Who is your target user base?",
+          "options": ["General Public", "Specific Demographic (Please specify)", "Hobbyists/Enthusiasts", "Professional Network", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What core features are needed?",
+          "options": ["User Profiles", "News Feed", "Messaging System", "Friend/Follow System", "Content Sharing", "Notifications", "Privacy Settings", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Forum/Community Website",
+      "questions": [
+        {
+          "question": "Who are you looking to attract?",
+          "options": ["General Public", "Niche Community (Please specify)", "Hobbyists/Enthusiasts", "Professional Peers", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What features are essential?",
+          "options": ["User Registration", "Discussion Boards", "Moderation Tools", "Private Messaging", "User Profiles", "Categories and Tags", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Booking/Reservation System",
+      "questions": [
+        {
+          "question": "Who will be using the booking system?",
+          "options": ["General Consumers", "Business Clients", "Event Attendees", "Tourists/Travelers", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What functionalities are required?",
+          "options": ["Booking Calendar", "Online Payment", "User Accounts", "Confirmation Emails", "Cancellation Policies", "Reviews and Ratings", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Real Estate Website",
+      "questions": [
+        {
+          "question": "Who is your target audience?",
+          "options": ["Home Buyers", "Renters", "Real Estate Investors", "Real Estate Agents", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What features are necessary?",
+          "options": ["Property Listings", "Search Functionality", "Contact Forms", "Agent Profiles", "Image Galleries", "Map Integration", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Restaurant Website",
+      "questions": [
+        {
+          "question": "Who are you targeting?",
+          "options": ["Local Customers", "Tourists", "Food Enthusiasts", "Event Planners", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What features do you need?",
+          "options": ["Menu Display", "Online Ordering", "Reservation System", "Contact Information", "Image Gallery", "Reviews and Ratings", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Photography Website",
+      "questions": [
+        {
+          "question": "Who do you want to reach?",
+          "options": ["Potential Clients", "Art Enthusiasts", "Fellow Photographers", "General Public", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What sections are important?",
+          "options": ["Photo Galleries", "About Me", "Contact Form", "Client Testimonials", "Blog", "Online Store", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Event Website",
+      "questions": [
+        {
+          "question": "Who is your target audience?",
+          "options": ["Event Attendees", "Sponsors", "Speakers/Performers", "General Public", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What functionalities are essential?",
+          "options": ["Event Listings", "Ticket Booking", "Event Calendar", "Speaker Profiles", "Sponsorship Information", "Contact Information", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Landing Page",
+      "questions": [
+        {
+          "question": "Who are you targeting with your landing page?",
+          "options": ["Potential Customers", "Newsletter Subscribers", "Event Attendees", "Investors", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What elements do you need?",
+          "options": ["Hero Section", "Call to Action (CTA)", "Features Overview", "Testimonials", "Contact Form", "Newsletter Signup", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    },
+    {
+      "project": "Custom Web Application",
+      "questions": [
+        {
+          "question": "Who will be the primary users?",
+          "options": ["Internal Employees", "External Clients/Customers", "Business Partners", "General Public", "Other (Please specify)"],
+          "QUESTION_TYPE": "combo"
+        },
+        {
+          "question": "What core functionalities are required?",
+          "options": ["User Authentication", "Data Management", "Real-time Updates", "API Integrations", "Dashboard and Reporting", "Other (Please specify)"],
+          "QUESTION_TYPE": "checkbox"
+        }
+      ]
+    }
+  ]
+}

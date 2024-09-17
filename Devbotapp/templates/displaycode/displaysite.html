@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project.name }} - Generated Site</title>
+    <style>
+        {% load static %}
+        @import url('{% static "generated_sites/project_"|add:project.id|add:"/styles.css" %}');
+    </style>
+    <script src="{% static "generated_sites/project_"|add:project.id|add:"/scripts.js" %}"></script>
+</head>
+<body>
+    {{ html_content|safe }}
+</body>
+</html>

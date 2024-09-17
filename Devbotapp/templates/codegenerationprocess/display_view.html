@@ -1,0 +1,61 @@
+{% extends 'Devbotapp/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Project Details</h1>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            Project Information
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ project.name }}</h5>
+            <p class="card-text">Description: {{ project.description }}</p>
+            <p class="card-text">Client: {{ project.client.name }}</p>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            User Responses
+        </div>
+        <div class="card-body">
+            <ul>
+                {% for response in user_responses %}
+                    <li><strong>{{ response.question.text }}</strong>: {{ response.selected_option.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            UI Requirements
+        </div>
+        <div class="card-body">
+            <p>Font: {{ ui_requirements.font }}</p>
+            <p>Font Color: <span style="color: {{ ui_requirements.font_color }}">{{ ui_requirements.font_color }}</span></p>
+            <p>Color Palette:</p>
+            <div>
+                {% for color in ui_requirements.color_palette %}
+                    <div style="display: inline-block; width: 50px; height: 50px; background-color: {{ color }};"></div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            Technical Requirements
+        </div>
+        <div class="card-body">
+            <p>Framework: {{ technical_requirements.framework }}</p>
+            <p>CMS: {{ technical_requirements.cms }}</p>
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a href=" " class="btn btn-primary">Next Step</a>
+    </div>
+</div>
+{% endblock %}
