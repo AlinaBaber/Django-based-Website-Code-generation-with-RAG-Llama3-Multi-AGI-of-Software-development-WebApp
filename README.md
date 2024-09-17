@@ -23,7 +23,7 @@ The **Django-based-Website-Code-generation-with-RAG-Llama3-Multi-AGI-of-Software
 - **Testing & QA**: Continuous testing and quality assurance to ensure the final product’s reliability and functionality across different platforms.
 
 ## System Architecture
-
+![sda diagram-2024-08-13-135719](https://github.com/user-attachments/assets/5692e05b-8409-4c7a-b62b-851ae608a509)
 1. **Client Requirement Gathering**:
    - Conducts client interviews and surveys to capture detailed requirements.
    - Documents functional and non-functional specifications.
@@ -31,6 +31,7 @@ The **Django-based-Website-Code-generation-with-RAG-Llama3-Multi-AGI-of-Software
 2. **Llama3 RAG-Based System**:
    - Enhances natural language processing using Llama3 integrated with a RAG system.
    - Provides accurate, context-aware responses.
+
 
 3. **Business Analysis Agent**:
    - Analyzes business workflows and creates detailed requirement documents.
