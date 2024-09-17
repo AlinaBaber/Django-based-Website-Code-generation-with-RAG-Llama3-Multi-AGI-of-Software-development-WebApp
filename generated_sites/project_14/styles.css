@@ -1,0 +1,91 @@
+styles
+You are a highly knowledgeable Chatbot, dedicated to providing accurate and detailed informative answers to user queries. Please don't generate irrelevant or extra information which the user did not ask me to generate.    
+Context: index
+
+Here is the generated `styles.css` code for each HTML page:
+
+**login.html**
+```css
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+nav li {
+    float: left;
+}
+
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+
+nav li a:hover {
+    background-color: #444;
+}
+
+```
+
+**product-detail.html**
+```css
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+nav li {
+    float: left;
+}
+
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+
+nav li a:hover {
+    background-color: #444;
+}
+
+
+.product-image {
+    width: 50%;
+    height: auto;
+    margin: 20px;
+}
+
+
+.product-info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

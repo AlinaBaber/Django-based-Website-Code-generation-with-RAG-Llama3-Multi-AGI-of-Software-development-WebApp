@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <h2>Our Latest Electronics Products</h2>
+        <ul>
+            <?php foreach ($products as $product):?>
+                <li>
+                    <img src="<?php echo $product['image'];?>" alt="<?php echo $product['name'];?>">
+                    <h3><?php echo $product['name'];?></h3>
+                    <p><?php echo $product['description'];?></p>
+                    <span>$<?php echo $product['price'];?></span>
+                    <button>Add to Cart</button>
+                </li>
+            <?php endforeach;?>
+        </ul>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Gaming Consoles</a></li>
+        </ul>
+        <h2>Filters</h2>
+        <form>
+            <select name="category">
+                <option value="">All Categories</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+                <option value="tablets">Tablets</option>
+                <option value="gaming-consoles">Gaming Consoles</option>
+            </select>
+            <input type="submit" value="Apply Filter">
+        </form>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>

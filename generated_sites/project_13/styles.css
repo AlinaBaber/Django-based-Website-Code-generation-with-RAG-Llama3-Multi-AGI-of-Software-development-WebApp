@@ -1,0 +1,38 @@
+styles
+You are a highly knowledgeable Chatbot, dedicated to providing accurate and detailed informative answers to user queries. Please don't generate irrelevant or extra information which the user did not ask you to generate.    
+Context: styles.css
+
+Here is the detailed website CSS code for each HTML file as per the provided SRS document:
+
+**index.html - Home Page Styles (styles.css)**
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.navbar-brand {
+    font-size: 24px;
+    color: #337ab7;
+}
+
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 20px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D\'http://www.w3.org/2000/svg\' viewBox%3D\'0 0 16 16\'%3E%3Cpath fill%3D\'none\' stroke%3D\'%23fff\' stroke-width%3D\'2\' d%3D\'M2 14l6-6 4 4L2 10Z\'/%3E%3C/svg%3E');
+}
+
+
+.collapse {
+    position: relative;
+}

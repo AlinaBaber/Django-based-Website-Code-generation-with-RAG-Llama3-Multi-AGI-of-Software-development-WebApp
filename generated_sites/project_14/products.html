@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Shopping Store - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filter Options -->
+    <form action="#" method="get">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="">All Categories</option>
+            <option value="t-shirts">T-Shirts</option>
+            <option value="dresses">Dresses</option>
+            <!-- More options can be added here -->
+        </select>
+
+        <label for="price-range">Price Range:</label>
+        <input type="range" id="price-range" min="0" max="100" value="50">
+
+        <button type="submit">Filter</button>
+    </form>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+        <?php foreach ($products as $product) {?>
+            <article>
+                <img src="<?php echo $product['image'];?>" alt="<?php echo $product['name'];?>">
+                <h2><?php echo $product['name'];?></h2>
+                <p><?php echo $product['description'];?></p>
+                <span class="price">$<?php echo $product['price'];?></span>
+            </article>
+        <?php }?>
+    </section>
+
+    <!-- Pagination -->
+    <nav aria-label="Pagination">
+        <ul>
+            <li><a href="#" aria-label="Previous">&lt;</a></li>
+            <li><a href="#" aria-label="Next">&gt;</a></li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Cloth Shopping Store</p>
+        <ul>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

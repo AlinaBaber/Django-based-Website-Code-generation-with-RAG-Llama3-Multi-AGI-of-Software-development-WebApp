@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Shopping Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cloth Shopping Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Products</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Tops</a>
+                                <a class="dropdown-item" href="#">Bottoms</a>
+                                <a class="dropdown-item" href="#">Dresses</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form action="" method="post" class="d-flex">
+                        <input type="search" name="search" placeholder="Search...">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <img src="product-image.jpg" alt="Product Image">
+                <p><strong>Product Name:</strong> Top 1</p>
+                <p><strong>Price:</strong>$20.00</p>
+                <button class="btn btn-success">Buy Now</button>
+            </div>
+            <div class="col">
+                <img src="product-image.jpg" alt="Product Image">
+                <p><strong>Product Name:</strong> Bottom 1</p>
+                <p><strong>Price:</strong>$15.00</p>
+                <button class="btn btn-success">Buy Now</button>
+            </div>
+            <div class="col">
+                <img src="product-image.jpg" alt="Product Image">
+                <p><strong>Product Name:</strong> Dress 1</p>
+                <p><strong>Price:</strong>$30.00</p>
+                <button class="btn btn-success">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Arrivals Section -->
+    <section class="latest-arrivals">
+        <h2>Latest Arrivals</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <img src="product-image.jpg" alt="Product Image">
+                <p><strong>Product Name:</strong> Top 2</p>
+                <p><strong>Price:</strong>$25.00</p>
+                <button class="btn btn-success">Buy Now</button>
+            </div>
+            <div class="col">
+                <img src="product-image.jpg" alt="Product Image">
+                <p><strong>Product Name:</strong> Bottom 2</p>
+                <p><strong>Price:</strong>$18.00</p>
+                <button class="btn btn-success">Buy Now</button>
+            </div>
+            <div class="col">
+                <img src="product-image.jpg" alt="Product Image">
+                <p><strong>Product Name:</strong> Dress 2</p>
+                <p><strong>Price:</strong>$35.00</p>
+                <button class="btn btn-success">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Offers Section -->
+    <section class="promotional-offers">
+        <h2>Promotional Offers</h2>
+        <p>We're offering a special discount for our loyal customers!</p>
+        <button class="btn btn-danger">Learn More</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; Cloth Shopping Store 2023</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

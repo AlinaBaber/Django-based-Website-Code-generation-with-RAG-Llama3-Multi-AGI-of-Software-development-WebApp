@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Product Image Gallery -->
+    <section class="product-image-gallery">
+        <h2><?php echo $product['name'];?> Images</h2>
+        <ul>
+            <?php foreach ($product['images'] as $image):?>
+                <li><img src="<?php echo $image;?>" alt="<?php echo $product['name'];?>"></li>
+            <?php endforeach;?>
+        </ul>
+    </section>
+
+    <!-- Product Description and Specs -->
+    <section class="product-description-specs">
+        <h2><?php echo $product['name'];?> Details</h2>
+        <p><?php echo $product['description'];?></p>
+        <ul>
+            <li>Processor: <?php echo $product['processor'];?></li>
+            <li>RAM: <?php echo $product['ram'];?></li>
+            <li>Storage: <?php echo $product['storage'];?></li>
+            <li>Operating System: <?php echo $product['os'];?></li>
+        </ul>
+        <button>Buy Now</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Shopping Store - Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Image Gallery -->
+    <section class="product-image-gallery">
+        <figure>
+            <img src="<?php echo $product['image'];?>" alt="<?php echo $product['name'];?>">
+        </figure>
+        <figcaption>
+            <h2><?php echo $product['name'];?></h2>
+            <p><?php echo $product['description'];?></p>
+        </figcaption>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <ul>
+            <?php foreach ($reviews as $review) {?>
+                <li>
+                    <p><?php echo $review['text'];?></p>
+                    <small><?php echo $review['author'];?> (<?php echo $review['rating'];?>/5)</small>
+                </li>
+            <?php }?>
+        </ul>
+    </section>
+
+    <!-- Add to Cart Button -->
+    <button type="button">Add to Cart</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Cloth Shopping Store</p>
+        <ul>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
