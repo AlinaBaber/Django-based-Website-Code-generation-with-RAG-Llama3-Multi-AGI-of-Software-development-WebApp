@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Django-based-Website-Code-generation-with-RAG-Llama3-Multi-AGI-of-Software-development** leverages advanced technologies and specialized agents to streamline the entire software development lifecycle. This system is designed to enhance processes from client requirement gathering to the final product deployment, utilizing a core component — the **Llama3 RAG-Based System** — for improved response accuracy and generation through advanced **Natural Language Processing (NLP)** and **Information Retrieval** capabilities. this repository have the apis and Django-based-Website-Code-generation-with-RAG-Llama3-Multi-AGI-of-Software-development django based rest apis.
+The **Django-based-Website-Code-generation-with-RAG-Llama3-Multi-AGI-of-Software-development** leverages advanced technologies and specialized agents to streamline the entire software development lifecycle. This system is designed to enhance processes from client requirement gathering to the final product deployment, utilizing a core component — the **Llama3 RAG-Based System** — for improved response accuracy and generation through advanced **Natural Language Processing (NLP)** and **Information Retrieval** capabilities. this repository have the apis and Django-based-Website-Code-generation-with-RAG-Llama3-Multi-AGI-of-Software-development django based Web Application.
 
 ## Key Components
 - **Django Based Web Application and Rest Apis**: For user experience Django base Web Application is develop with two tier django based web application and rest apis
